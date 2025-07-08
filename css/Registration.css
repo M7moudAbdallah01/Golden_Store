@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+/* ================================================================== */
+
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.lovepik.com/bg/20231216/an-image-of-a-clothing-store_2490513_wh860.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* ================================================================== */
+/* the name of the store */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    background-color: #343434;
+    color: #F0A500;
+    box-shadow: 5px 5px 8px #FFB22C;
+    border: 2px solid  #FFB22C; 
+    height:70px;
+    padding: 0 20px;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0;   
+}
+.name{
+    font-size: 1.5rem;
+}
+.navigation a{
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: color 0.3s;
+    color: #F0A500;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.navigation a:hover{
+    color:white ; 
+}
+.split-btn-container {
+    display: inline-flex;
+    border: 2px solid #F0A500;
+    border-radius: 6px;
+    overflow: hidden;
+
+}
+
+.split-btn-part {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #343434;
+    color: #F0A500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.split-btn-part.right {
+  margin-left: -20px;
+  margin-right: 0px;
+}
+.split-btn-part.left {
+    border-right: 2px solid #F0A500;
+    margin-left: -3px;
+    margin-right: 20px;
+    
+}
+
+.split-btn-part:hover {
+    background-color: #F0A500;
+    color: #343434;
+}
+/* ================================================================== */
+ 
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.reg{
+    background-color: #343434;
+    color: #F0A500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 0px;
+    padding: 20px 25.7%;
+    height: 50px;
+    margin-top: 60px;
+
+}
+.Registration{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(52, 52, 53 , 0.5) ;
+    border-color:  #F0A500;
+    border-radius: 0 0 8px 8px;
+    height: 490px;
+    width: 60%;
+    margin: 0px auto;
+    
+}
+input {
+    height: 34px;
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 280px;
+    border: 1px solid #F0A500;
+    padding-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+span{
+    font-weight: bold;
+    font-size: 20px;
+    color: #F0A500;
+    width: 200px;
+}
+#error{
+    color: red;
+    display: none;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 30%;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.finish{
+    margin: 10px;
+    border-radius: 10px;
+    padding: 7px;
+    font-weight: bold;
+    transition: transform 1.02s ease;
+    width: 70px;
+}
+
+.finish:hover{
+    background-color: #343434;
+    border-color: #F0A500;
+    color: #F0A500;
+    box-shadow: 1px 1px 10px #F0A500;
+    cursor: pointer;
+    transform: scale(1.05); 
+}
+
+
+
+hr{
+    margin: 10px;
+}
+
+
+.Sign-in{
+    margin: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.login{
+    text-decoration: none;
+    color:#F0A500;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.login:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
