@@ -101,7 +101,7 @@ body.light-mode footer .footer-content .footer-section p,
 body.light-mode footer .footer-bottom p{
   color: #F0A500 !important;
 }
-
+ 
 
 
 .heart-icon {
@@ -115,78 +115,65 @@ body.light-mode footer .footer-bottom p{
 }
 
 
-/* ✅ Responsive Design */
-@media (max-width: 992px) {
-  .product-card {
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-  }
+.mobile-nav-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 24px;
+  z-index: 1001;
+  cursor: pointer;
+  color: #FFB22C;
+}
 
-  .product-img {
-    width: 90%;
-    height: auto;
-    margin: 10px auto;
-  }
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  padding: 20px;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+}
 
-  .add-fav {
-    margin-top: 20px;
-    justify-content: center;
-  }
+.mobile-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
 
-  .adv {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-  }
+.mobile-sidebar li {
+  margin: 15px 0;
+}
 
-  .img1 {
-    width: 90%;
-    height: auto;
-    margin-top: 10px;
-  }
+.mobile-sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
 
-  .products img {
-    width: 100%;
-    height: auto;
+.mobile-sidebar .close-btn {
+  font-size: 28px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: block;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: block;
   }
 
   .navigation {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .split-btn-container {
-    margin-top: 10px;
+    display: none !important;
   }
 }
 
-@media (max-width: 576px) {
-  .details ul {
-    padding-left: 15px;
-  }
-
-  .product-info h3 {
-    font-size: 1rem;
-  }
-
-  .price {
-    font-size: 0.9rem;
-  }
-
-  .addtocart {
-    font-size: 0.9rem;
-    padding: 8px 20px;
-  }
-
-  .heart-icon {
-    font-size: 1.5rem;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
+.mobile-sidebar.active {
+  left: 0;
 }
 
