@@ -1,0 +1,79 @@
+/* ========== Responsive Form Design for Registration & Login ========== */
+@media (max-width: 768px) {
+  .reg {
+    padding: 10px;
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .Registration {
+    width: 90%;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .row span {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .finish {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #error {
+    margin-left: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .Sign-in {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .login {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reg {
+    font-size: 16px;
+  }
+
+  .row span {
+    font-size: 14px;
+  }
+
+  input {
+    font-size: 13px;
+  }
+
+  .finish {
+    font-size: 14px;
+  }
+}
