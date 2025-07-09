@@ -126,4 +126,23 @@ function updateFavCount() {
 }
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.querySelector(".mobile-nav-toggle");
+  const sidebar = document.querySelector(".mobile-sidebar");
+  const closeBtn = document.querySelector(".mobile-sidebar .close-btn");
 
+  toggleBtn.addEventListener("click", () => {
+    sidebar.classList.add("active");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+  });
+
+  // اغلق القائمة عند الضغط على أي رابط
+  sidebar.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      sidebar.classList.remove("active");
+    });
+  });
+});
