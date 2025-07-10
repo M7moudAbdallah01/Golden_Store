@@ -22,5 +22,5 @@ form.addEventListener("submit", function (e) {
 
   errorMsg.style.display = "none";
   alert("✅ Logged in successfully!");
-  window.location.href = "HomePage.html";
+  window.location.href = "index.html";
 });
