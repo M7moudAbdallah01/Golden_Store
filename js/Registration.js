@@ -22,9 +22,10 @@
             } else {
                 Msg.style.display = "none";
                 alert("✅ Registered Successfully!");
-                window.location.href = "HomePage.html";
+                window.location.href = "index.html";
             return true;  
-            }        
+            }  
+                  
   });
 
 
