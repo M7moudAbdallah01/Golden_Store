@@ -125,7 +125,8 @@ header{
     height: 490px;
     width: 60%;
     margin: 0px auto;
-    
+    margin-bottom: 20px;
+
 }
 input {
     height: 34px;
