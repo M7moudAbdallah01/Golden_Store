@@ -226,10 +226,10 @@ footer {
     margin-bottom: 8px;
 }
 
-.footer-section ul li a:hover {
+.footer-section ul li a:hover{
     text-decoration: underline;
 }
-.footer-section ul li a {
+.footer-section ul li a{
     color: #F0A500;
     text-decoration: none;
 }
