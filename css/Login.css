@@ -192,7 +192,7 @@ hr {
   text-decoration: underline;
 }
 
-/* ========================================================================================== */
+/* ========================================================================================== */ 
 
 footer {
     background-color: #343434;
@@ -246,4 +246,12 @@ footer {
     padding: 16px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 20px;
+}
+
+.footer-bottom p a:hover {
+    text-decoration: underline;
+}
+.footer-bottom p a {
+    color: #F0A500;
+    text-decoration: none;
 }
