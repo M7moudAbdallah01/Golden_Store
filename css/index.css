@@ -284,4 +284,12 @@ footer {
     font-size: 20px;
 }
 
+.footer-bottom p a:hover {
+    text-decoration: underline;
+}
+.footer-bottom p a {
+    color: #F0A500;
+    text-decoration: none;
+}
+
 
