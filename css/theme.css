@@ -45,7 +45,6 @@ button {
   border: 1px solid #F0A500;
 }
 
-/* الوضع النهاري */
 body.light-mode {
   background-color: #ffffff;
   color: black;
@@ -85,13 +84,12 @@ body.light-mode #cartItems p{
   color: black;
   border: 1px solid #F0A500; 
 }
-/* إزالة البوردر من زر القلب داخل الكروت في الوضع النهاري */
 body.light-mode .fav {
   border: none !important;
   background: none !important;
   outline: none !important;
   box-shadow: none !important;
-  color: #F0A500 !important; /* أو اللون اللي يناسب التنسيق العام */
+  color: #F0A500 !important;
 }
 body.light-mode .footer,
 body.light-mode .footer p,
